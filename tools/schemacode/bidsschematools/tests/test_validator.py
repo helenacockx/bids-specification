@@ -346,6 +346,7 @@ def test_bids_datasets(bids_examples, tmp_path):
     # Is the schema version recorded correctly?
     assert result["bids_schema_version"] == "99999.0.0-dev"
 
+
 def test_broken_json_dataset(bids_examples, tmp_path):
     from bidsschematools.validator import validate_bids
 
