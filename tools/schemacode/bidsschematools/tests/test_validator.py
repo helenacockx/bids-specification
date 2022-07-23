@@ -3,6 +3,7 @@ import shutil
 
 import pytest
 
+
 def test__determine_bids_version(tmp_path):
     from bidsschematools.validator import _determine_bids_version
 
@@ -18,12 +19,12 @@ def test__determine_bids_version(tmp_path):
 
     # Does fallback to unknown development version work?
     expected_version = "1.2.3-dev"
-    schema_path = os.path.join(tmp_path,"whatever",expected_version)
+    schema_path = os.path.join(tmp_path, "whatever", expected_version)
     bids_version = _determine_bids_version(schema_path)
     assert bids_version == expected_version
 
     # Does fallback to unknown development version work?
-    schema_path = os.path.join(tmp_path,"whatever","I_copied_this_From_some_website")
+    schema_path = os.path.join(tmp_path, "whatever", "I_copied_this_From_some_website")
     bids_version = _determine_bids_version(schema_path)
     assert bids_version == "unknown"
 
