@@ -214,7 +214,7 @@ model-VGG16   func    A VGG convolutional neural network.
     copy of that raw file.
 
 -   Each Derivatives filename MUST be of the form:
-    `<source_entities>[_keyword-<value>]_<suffix>.<ext>`
+    `<source_entities>[_model-<label>][_keyword-<value>]_<suffix>.<ext>`
     (where `<value>` could either be an `<index>` or a `<label>` depending on
     the keyword; see [Definitions][definitions])
 
