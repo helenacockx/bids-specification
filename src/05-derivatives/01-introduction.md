@@ -171,19 +171,19 @@ derivative dataset:
       "sub-01": {
          "dwi": {
             "model-DTI": {
-                "sub-01_model-DTI_param-tensor_model.nii.gz": "",
-                "sub-01_model-DTI_param-tensor_model.json": "",
-                "sub-01_model-DTI_param-S0_model.nii.gz": "",
-                "sub-01_model-DTI_param-S0_model.json": ""
+                "sub-01_model-DTI_param-tensor_<suffix>.nii.gz": "",
+                "sub-01_model-DTI_param-tensor_<suffix>.json": "",
+                "sub-01_model-DTI_param-S0_<suffix>.nii.gz": "",
+                "sub-01_model-DTI_param-S0_<suffix>.json": ""
             },
-            "model-DTI_model.json": ""
+            "model-DTI_<suffix>.json": ""
          },
          "func": {
             "model-VGG16": {
-                "sub-01_model-VGG16_param-all_model.h5": "",
-                "sub-01_model-VGG16_param-all_model.json": ""
+                "sub-01_model-VGG16_param-all_<suffix>.h5": "",
+                "sub-01_model-VGG16_param-all_<suffix>.json": ""
             },
-            "model-VGG16_model.json": ""
+            "model-VGG16_<suffix>.json": ""
          }
       }
    }
@@ -191,8 +191,9 @@ derivative dataset:
 
 ) }}
 
-Please note that this example is fictional, and the `_model` suffix here has been
-used to only illustrate file names according to their particular convention (see below).
+Please note that this example is fictional, and the `_<suffix>` suffix is a placeholder
+illustrating the file name structure of the files necessary to reusably store
+the model (see below).
 
 In this case, the `models.tsv` file could contain the following content:
 
