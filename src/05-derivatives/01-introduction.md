@@ -106,11 +106,15 @@ Template:
 
 ) }}
 
-A metadata file, `models.tsv` is OPTIONAL, accompanied by
-a `models.json` file that is REQUIRED, if and only if `models.tsv` is present.
-The purpose of the RECOMMENDED `models.tsv` file is to index the available
+A metadata file, `sub-<label>_models.tsv` is OPTIONAL, accompanied by
+a `sub-<label>_models.json` file that is REQUIRED, if and only
+if `sub-<label>_models.tsv` is present. The purpose of the RECOMMENDED
+`sub-<label>_models.tsv` file is to index the available
 `<model_id>` labels and describe properties of the models such as the datatype
 from which they are derived and a human-readable description of each model.
+A `<pipeline_name>/models.tsv` file can be stored at the root level of the
+derivatives dataset. In such a case, no `model_id` in that file can be reused
+in any of the deeper `sub-<label>_models.tsv` files.
 
 If this file exists, it MUST contain the column `model_id`,
 which MUST consist of `model-<label>` values identifying one row for each model,
