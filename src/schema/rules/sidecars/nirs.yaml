@@ -138,6 +138,9 @@ NirsRequired:
     MAGNChannelCount:
       level: optional
       level_addendum: required if any channel type is MAGN
+    MISCChannelCount:
+      level: optional
+      level_addendum: required if any channel type is MISC
 
 NirsRecommend:
   selectors:
